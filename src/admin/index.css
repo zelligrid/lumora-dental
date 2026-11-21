@@ -35,3 +35,6 @@ body,
 body {
   margin: 0;
 }
+.mola-bubble {
+  display: none !important;
+}
