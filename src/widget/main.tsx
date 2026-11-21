@@ -12,7 +12,6 @@ function mount() {
   const host = document.createElement("div");
   host.className = "mola-voice-root";
   document.body.appendChild(host);
-  createRoot(host).render(<Widget />);
 }
 
 if (document.readyState === "loading") {
