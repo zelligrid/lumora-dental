@@ -64,6 +64,7 @@ export function Widget() {
     setStatus("Tap “Allow” on the microphone prompt to talk to Maya.");
     let stream: MediaStream;
     try {
+      
       stream = await navigator.mediaDevices.getUserMedia({
         audio: { echoCancellation: true, noiseSuppression: true, channelCount: 1 },
       });
@@ -334,17 +335,7 @@ export function Widget() {
 
   if (phase === "bubble") {
     return (
-      <button
-        className="mola-bubble"
-        type="button"
-        onClick={startCall}
-        aria-label="Book an appointment. Start a voice booking with Maya."
-      >
-        <span className="mola-orb-core" aria-hidden="true">
-          <span className="mola-orb-shine" />
-        </span>
-        <span className="mola-orb-prompt">Talk to our AI &amp; book a call</span>
-      </button>
+     
     );
   }
 
